@@ -7,6 +7,7 @@ const generateHTML = require('./src/GenerateHTML');
 const fs = require('fs');
 
 let holderArray = [];
+//this initial inquirer prompt starts when app is launched, and used for the manager
 inquirer
     .prompt([
     {
@@ -37,6 +38,8 @@ inquirer
         Menu();
     })
 
+//this is the menu that is loaded once a team member is finished being added
+//menu can add more employees or generate final html page
     function Menu(){
         inquirer
     .prompt([
