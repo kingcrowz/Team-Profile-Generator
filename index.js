@@ -63,6 +63,7 @@ inquirer
      })
     }
 
+//section for adding engineer(s)
     function addEngineer(){
         inquirer
     .prompt([
@@ -95,6 +96,7 @@ inquirer
     })
     }
 
+//section for adding Intern(s)
     function addIntern(){
         inquirer
     .prompt([
@@ -129,7 +131,7 @@ inquirer
 
 
 
-
+//Section writes the information inputted onto a page.
     const writeFile = data => {
         fs.writeFile('./dist/index.html', data, err => {
             if (err) {
