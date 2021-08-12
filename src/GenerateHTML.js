@@ -1,3 +1,4 @@
+//section generates a manager card with the information sent into it.
 const generateMangerCard = function (manager) {
     return `
     <div class='col-4 mt-4'>
@@ -16,6 +17,7 @@ const generateMangerCard = function (manager) {
     `
 };
 
+//this section generates an engineer with the information sent to it
 const generateEngineerCard = function (engineer) {
     return `
     <div class='col-4 mt-4'>
@@ -34,6 +36,7 @@ const generateEngineerCard = function (engineer) {
     `
 };
 
+//this section generates an intern with the information sent to it
 const generateInternCard = function (intern) {
     return `
     <div class='col-4 mt-4'>
@@ -52,6 +55,7 @@ const generateInternCard = function (intern) {
     `
 };
 
+//this section is the main part of this file that compiles things together using methods within this file
 generateHTML = (data) => {
     holderArray = [];
     for (let i = 0; i < data.length; i++) {
@@ -75,6 +79,7 @@ generateHTML = (data) => {
     return generateTeam;
 }
 
+//this is the HTML skeleton where everything will be socketed into
 const generateTeamPage = function (employeecard) {
     return `
 <!DOCTYPE html>
